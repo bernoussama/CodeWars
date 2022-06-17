@@ -5,5 +5,5 @@ You only need to worry about english grammar rules for this kata, where anything
 All values will be positive integers or floats, or zero. */
 
 function plural(n) {
-    return n===1 ? true : false
+    return n===1 ? false : true
   }
