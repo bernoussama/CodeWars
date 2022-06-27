@@ -10,7 +10,7 @@
 // Returns:
 
 // Examples:
-console.log();
+console.log(); // =>
 
 function foo(bar) {
   // Pseudo:
