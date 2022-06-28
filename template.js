@@ -9,11 +9,11 @@
 
 // Returns:
 
+// Examples:
+console.log();
+
 function foo(bar) {
   // Pseudo:
 
   return;
 }
-
-// Examples:
-console.log();
