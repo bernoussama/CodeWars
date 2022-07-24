@@ -27,18 +27,20 @@ The lowest index N where the side to the left of N is equal to the side to the r
 Note:
 If you are given an array with multiple answers, return the lowest correct index. */
 
-function findEvenIndex(arr){
-  arr.forEach((e, index, array)=>{
-    let sum1 = 0
-    for(let i = index+1; i< array.length; i++){
-        sum1 += array[i]
+function findEvenIndex(arr) {
+  let mapped = arr.map((e, index, array) => {
+    let sum1 = 0;
+    for (let i = index + 1; i < array.length; i++) {
+      sum1 += array[i];
     }
-    let sum2 = 0
-    for(let i = index-1; i>= 0; i--){
-        sum2 += array[i]
+    let sum2 = 0;
+    for (let i = index - 1; i >= 0; i--) {
+      sum2 += array[i];
     }
-    sum1 == sum2 ? index : -1
-  })
+    return sum1 == sum2 ? index : -1;
+  });
+  return Math.max(...mapped);
 }
 
-console.log(findEvenIndex([1,100,50,-51,1,1]))
+console.log(findEvenIndex([1, 100, 50, -51, 1, 1]));
+
