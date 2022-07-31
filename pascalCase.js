@@ -69,4 +69,3 @@ function toCamelCase(str){
     return string[0].toUpperCase() + string.slice(1)
   } 
   */
-
