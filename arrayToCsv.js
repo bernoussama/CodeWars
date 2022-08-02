@@ -18,6 +18,6 @@ Array's length > 2.
 More details here: https://en.wikipedia.org/wiki/Comma-separated_values 
 */
 
-function toCsvText(array) {
+function toCsvText(array = []) {
   return array.map((el, i) => el.join(",")).join("\n");
 }

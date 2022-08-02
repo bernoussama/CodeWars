@@ -10,13 +10,13 @@ function order(words) {
   //use the number as the index of the word
   //push to a new array from 1 up
 
-  arr = words.split(" ");
+  let arr = words.split(" ");
 
-  arr2 = arr.map((el, i) => {
+  let arr2 = arr.map((el, i) => {
     return el.split("");
   });
 
-  indexes = arr2.map((el) => {
+  let indexes = arr2.map((el) => {
     return el.filter((element) => {
       return Number(element);
     });
