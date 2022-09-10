@@ -34,3 +34,5 @@ return false
 
 console.log(Kata.validatePin("0000")); // =>true
 console.log(Kata.validatePin("1230")); // =>true
+
+// this kata is so complicated and time consuming without regex so i'm putting it on hold
