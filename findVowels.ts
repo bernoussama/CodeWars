@@ -16,16 +16,16 @@ This is indexed from [1..n] (not zero indexed!)
 
 // /* Prep */
 
-// Parameters:
+// Parameters: word: string
 
-// Returns:
+// Returns: vIndices: number[]
 
 // Examples:
-console.log(vowelIndices("Mmmm")); // =>
+console.log(vowelIndices("Mmmm")); // => []
 
-console.log(vowelIndices("YoMama")); // =>
+console.log(vowelIndices("YoMama")); // =>[1,5]
 
-console.log(vowelIndices("Apple")); // =>
+console.log(vowelIndices("Apple")); // => [1,2,4,6]
 
 export function vowelIndices(word: string): number[] {
   let vIndices: number[] = [];
