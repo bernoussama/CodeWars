@@ -13,3 +13,11 @@ def points(games):
 
 
 print(points(['1:0', '2:0', '3:0', '4:0', '2:1', '3:1', '4:1', '3:2', '4:2', '4:3'])) # expected output: 30
+
+    # favorite solution
+# def points(games):
+#     result = 0
+#     for item in games:
+#         result += 3 if item[0] > item[2] else 0
+#         result += 1 if item[0] == item[2] else 0
+#     return result
