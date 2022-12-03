@@ -47,3 +47,4 @@ export function duplicateEncode(word: string) {
 
 // Examples:
 console.log(duplicateEncode("din")); // =>"((("
+

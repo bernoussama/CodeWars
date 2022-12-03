@@ -40,3 +40,9 @@ def duplicate_encode(word):
 
 # Examples:
 print(duplicate_encode("din"))  # => "((("
+
+# Interesting solution:
+
+
+def duplicate_encode(word):
+    return "".join(["(" if word.lower().count(c) == 1 else ")" for c in word.lower()])
