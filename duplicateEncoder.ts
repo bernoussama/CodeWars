@@ -17,8 +17,6 @@ Assertion messages may be unclear about what they display in some languages. If 
 
 // Returns:
 
-// Examples:
-console.log(duplicateEncode("din")); // =>"((("
 
 export function duplicateEncode(word: string) {
   // initializing empty object to bind chars with their count
@@ -46,3 +44,6 @@ export function duplicateEncode(word: string) {
     .join("");
   return brackets;
 }
+
+// Examples:
+console.log(duplicateEncode("din")); // =>"((("
