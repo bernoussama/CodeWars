@@ -17,9 +17,6 @@ Assertion messages may be unclear about what they display in some languages. If 
 
 # Returns:
 
-# Examples:
-print()  # =>
-
 
 def duplicate_encode(word):
     # Pseudo:
@@ -39,3 +36,7 @@ def duplicate_encode(word):
         bracketed += ")"
 
     return bracketed
+
+
+# Examples:
+print(duplicate_encode("din"))  # => "((("
