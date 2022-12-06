@@ -24,16 +24,16 @@ def duplicate_encode(word):
     dict = {}
     bracketed = ""
     for char in word:
-      if char in dict:
-        dict[char] += 1
-      else:
-        dict[char] = 1
+        if char in dict:
+            dict[char] += 1
+        else:
+            dict[char] = 1
 
     for char in word:
-      if dict[char] == 1:
-        bracketed += "("
-      else:
-        bracketed += ")"
+        if dict[char] == 1:
+            bracketed += "("
+        else:
+            bracketed += ")"
 
     return bracketed
 
