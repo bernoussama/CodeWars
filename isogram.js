@@ -13,12 +13,13 @@ isIsogram "aba" = false
 
 // /* Prep */
 
-// Parameters:
+// Parameters: str
 
-// Returns:
+// Returns: bool
 
 // Examples:
-console.log(); // =>
+console.log(isIsogram("lol")); // => false
+console.log(isIsogram("nice world!")); // => true
 
 function isIsogram(str) {
   //...
